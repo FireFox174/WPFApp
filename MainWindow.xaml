@@ -1,0 +1,173 @@
+﻿<Window x:Name="Window" x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="455" Width="335" Background="#FF101E55" KeyDown="OnKeyDown">
+    <Grid HorizontalAlignment="Center" Width="334" Height="445" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="443*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Two" Content="2" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" RenderTransformOrigin="0.5,0.5" Click="NumClick" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="80"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Three" Content="3" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" RenderTransformOrigin="0.5,0.5" Click="NumClick" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="160"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" FontSize="30" BorderBrush="#00707070" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" Click="OperaterClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="240"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Four" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="4" RenderTransformOrigin="0.5,0.5" Click="NumClick" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="80"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Five" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="5" RenderTransformOrigin="0.5,0.5" Click="NumClick" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="80" Y="80"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Six" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="6" RenderTransformOrigin="0.5,0.5" Click="NumClick" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="160" Y="80"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Minus" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="-" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderBrush="#00707070" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" FontSize="30" Click="OperaterClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="240" Y="80"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Seven" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="7" RenderTransformOrigin="0.5,0.5" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" Click="NumClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="160"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Eight" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="8" RenderTransformOrigin="0.5,0.5" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" Click="NumClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="160" X="80"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Nine" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="9" RenderTransformOrigin="0.5,0.5" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" Click="NumClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="160" Y="160"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Multiply" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="×" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderBrush="#00707070" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" FontSize="30" Click="OperaterClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="240" Y="160"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="One" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="1" Click="NumClick" FontSize="17" Background="#FF2450D0" Foreground="#FFFFF2F2" BorderBrush="#00707070" Grid.RowSpan="2" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" ClickMode="Press"/>
+        <Button HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="Button" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderBrush="#00707070" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="240"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="0" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Background="#FF2450D0" FontSize="17" BorderBrush="#007E7575" Foreground="White" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" Click="NumClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="80" Y="240"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="Button" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderBrush="#00707070" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="160" Y="240"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Divide" HorizontalAlignment="Left" Margin="6,102,0,0" VerticalAlignment="Top" Height="80" Width="80" Content="÷" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderBrush="#00707070" FontWeight="Bold" FontFamily="JetBrains Mono SemiBold" FontSize="30" Click="OperaterClick">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="240" Y="240"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="BoxOfText" Margin="6,4,4,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="100" Background="#FF101E55" Foreground="White" FontSize="30" TextWrapping="Wrap" FontFamily="JetBrains Mono SemiBold" AutoWordSelection="True" Tag="" IsReadOnly="True"/>
+    </Grid>
+</Window>
